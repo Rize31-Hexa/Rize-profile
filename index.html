@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rize Portfolio - Animator, 3D Artist & IT Enthusiast">
+    <title>RIZE PORTFOLIO</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">RIZE<span>.</span></a>
+            
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#works" class="nav-link">Works</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <p class="hero-tag">RIZE ANIMATION</p>
+            <h1 class="hero-title">RIZE <span class="accent">PROFILE</span></h1>
+            <p class="hero-subtitle">Animator, 3D Artist & IT Enthusiast</p>
+            <p class="hero-desc">Creating digital works through animation, technology, and creativity.</p>
+            <a href="#works" class="btn-primary">Explore My Works</a>
+        </div>
+    </section>
+
+    <!-- ========== WORKS SECTION ========== -->
+    <section id="works" class="works section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Works</h2>
+                <p class="section-subtitle">A collection of my creative and technical projects</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="animation">Animation</button>
+                <button class="filter-btn" data-filter="3d">3D Modeling</button>
+                <button class="filter-btn" data-filter="game">Game</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project 1: Animation -->
+                <article class="project-card" data-category="animation">
+                    <div class="project-image">
+                        <div class="placeholder-img">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <span class="project-category">Animation</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Minecraft Animation Series</h3>
+                        <p>Short animation series with pixel-art style storytelling.</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: 3D Modeling -->
+                <article class="project-card" data-category="3d">
+                    <div class="project-image">
+                        <div class="placeholder-img">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                            </svg>
+                        </div>
+                        <span class="project-category">3D Modeling</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Character 3D Render</h3>
+                        <p>3D character modeling and rendering with realistic lighting.</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Game (BARU) -->
+                <article class="project-card" data-category="game">
+                    <div class="project-image">
+                        <div class="placeholder-img">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <span class="project-category">Game</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Game Project</h3>
+                        <p>Interactive game development with custom mechanics and pixel-art visuals.</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <!-- Project 4: Other (BARU) -->
+                <article class="project-card" data-category="other">
+                    <div class="project-image">
+                        <div class="placeholder-img">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <span class="project-category">Other</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Other Project</h3>
+                        <p>Various creative and technical experiments beyond the main categories.</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="placeholder-avatar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Saya adalah siswa <strong>SMK Negeri 1 Rembang</strong> jurusan <strong>Teknik Komputer dan Jaringan</strong> yang memiliki ketertarikan pada dunia animasi, teknologi informasi, jaringan komputer, dan kreativitas digital.</p>
+                    <p>Saya senang mempelajari hal baru serta mengembangkan kemampuan melalui berbagai proyek. Dari membuat animasi 3D hingga merancang infrastruktur jaringan, saya percaya bahwa teknologi dan kreativitas adalah dua hal yang saling melengkapi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technical expertise and personal strengths</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>Computer Hardware & Software</li>
+                        <li>Network Administration</li>
+                        <li>Network Troubleshooting</li>
+                        <li>MikroTik Configuration</li>
+                        <li>Debian Server Management</li>
+                        <li>Windows OS</li>
+                        <li>3D Animation & Rendering</li>
+                        <li>Video Editing</li>
+                        <li>Digital Design</li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Problem Solving</li>
+                        <li>Critical Thinking</li>
+                        <li>Teamwork</li>
+                        <li>Adaptability</li>
+                        <li>Communication</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Achievements</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>Juara 1 LKS ITNSA</h3>
+                        <p>Kabupaten Rembang 2026</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>PKL — PT Foura Inti Sinergi (FISNET)</h3>
+                        <p>NOC (Network Operations Center) Intern, Rembang</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 — 2027</span>
+                        <h3>SMK Negeri 1 Rembang</h3>
+                        <p>Teknik Komputer dan Jaringan (TKJ)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate and create something amazing</p>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:rize@example.com" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span>Email</span>
+                </a>
+                <a href="https://youtube.com/@rize" target="_blank" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://github.com/rize" target="_blank" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://instagram.com/rize" target="_blank" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 <strong>Rize Animation</strong>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
